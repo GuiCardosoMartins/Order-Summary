@@ -2,12 +2,12 @@
 
 ![Design preview for the Order summary card coding challenge](./design/desktop-preview.jpg)
 
-## Welcome! 👋
+## Bem-vindo! 👋
 
 <h1 align="center">
   Order Summary Card
 </h1>
-<p align="center">Desafio do site [Frontend Mentor](https://www.frontendmentor.io) </p>
+<p align="center">Desafio do site [Frontend Mentor](https://www.frontendmentor.io)</p>
 
 **Para fazer este desafio, você precisa de um conhecimento básico de HTML e CSS.**
 
