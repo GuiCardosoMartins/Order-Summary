@@ -1,148 +1,98 @@
-body {
+body{
     margin: 0;
     padding: 0;
     font-family: "Red Hat Display", sans-serif;
+    font-weight: bold;
     font-size: 1rem;
-    text-align: center; 
-    place-content: center;
-    background-image: url(../images/pattern-background-mobile.svg);
+    background-image: url(/Order-summary-card/images/pattern-background-mobile.svg);
     background-size: 100vw 40vh;
     background-repeat: no-repeat;
-    background-blend-mode: multiply;
-    background-color: #e0e8ff;
+    background-color: hsl(225, 100%, 94%);
+}
+main{
+    width: 100vw;
     height: 100vh;
-    text-rendering: optimizeSpeed;
-    line-height: 1.5;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-  }
-img{
-    max-width: 100%;
-    display: block;
 }
-#container {
-    max-width: 90em;
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-    align-self: center;
+#container{
+    width: 350px;
+    margin: auto;
 }
 #card{
     border-radius: 1rem;
-    box-shadow: 0 6px 10px 3px #e0e8ff;
-    background-color: white;
+    box-shadow: 0 6px 10px 3px rgb(202, 214, 210);
 }
 #content{
-        padding: 1.5rem;
-        background-color: white;
-        border-radius: 0 0 1rem 1rem;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0 0 1em 1em;
 }
 #img-hero{
-    object-fit: cover;
-    width: 100vw;
     display: block;
-    border-radius: 1rem 1rem 0 0;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1em 1em 0 0;
 }
-h1{
-    color: hsl(223, 47%, 23%);
-    text-align: center;
+h1, #AnnualPlan{
+    color:  hsl(223, 47%, 23%);
+    text-align: center;   
 }
-h1 + p {
-    text-align: center;
+h1 + p, p + p{
     color: gray;
-    font-weight: bold;
-}
-#plan{
-    display: flex;
-    background-color: hsl(225, 100%, 98%);
-    justify-content: space-around;
-    font-weight: bold;
-}
-#icon-music{
-    align-self: center;  
-    margin-left: 10px;
-}
-#value{
-    margin-right: 20px; 
+    text-align: center;
+    padding: 4px;
 }
 p + p{
-    color: gray;
     margin-top: -10px;
+}
+#plan{
+    border-radius: 9px;
+    background-color: hsl(225, 100%, 98%);
+    display: grid;
+    grid-template-columns: 70px 1fr 70px;
+}
+#icon-music{
+    margin-left: -20px;
+}
+#value{
+    margin-left: -25px;
 }
 #link-change{
     align-self: center;
-    margin-right: 35px;
-    font-weight: bold;
+    margin-left: -10px;
+}
+.link-change:hover{
+    color: hsl(245, 75%, 32%);
+}
+a{
+    text-decoration: none;
+    color: (internal value);
+    cursor: pointer;
+}
+.link-payment{
+    color: hsl(225, 100%, 94%);
+    text-decoration: none;
+}
+.link-cancel{
+    color: gray;
+}
+.link-cancel:hover{
+    color: hsl(223, 47%, 23%);
 }
 #payment{
     background-color: hsl(245, 75%, 52%);
-    margin: 20px 20px;
-    padding: 15px 15px;
+    padding: 4%;
+    border-radius: 9px;
     text-align: center;
-    border-radius: 8px;
-    color: white;
-    font-weight: bold;
+    color: hsl(223, 47%, 23%);
 }
-#payment:hover, #payment:focus {
-    color: #3829e0;
-    background-color: white;
-    border: 1px solid #3829e0;
-  }
+#payment:hover{
+    background-color: hsl(245, 75%, 32%);
+}
 #cancel{
-    margin: 20px 20px;
-    padding: 15px 15px;
+    margin-top: 25px;
     text-align: center;
-    font-weight: bold;
-    color: gray;
-    color: inherit;
-}
-#cancel:hover, #cancel:focus {
-    color: #1f2f56;
-    border: 1px dotted #3829e0;
-  }
-.button {
-    text-decoration: none;
-    outline: none;
-    border: 1px solid transparent;
-    padding: 0.8em 1.8em;
-    display: block;
-    font-weight: bold;
-    transition: all 350ms linear;
-  }
-@media(min-width: 480px) and (max-width: 575px){
-    #container{
-        width: 75vw;
-    }
-}
-@media (min-width: 576px) and (max-width: 800px){
-    #container{
-        width: 65vw;
-    }
-}
-@media(min-width:801px) and (max-width: 950px){
-    body{
-        background-image: url(../images/pattern-background-desktop.svg);
-        font-size: 1rem;
-        }
-    #container{
-        width: 50vw;
-    }
-}
-@media(min-width: 951px){
-    body{
-        background-image: url(../images/pattern-background-desktop.svg);
-        font-size: 1rem;
-        }
-    #container{
-        width: 35vw;
-        height: 95%;
-    }
-    #icon-music{  
-        margin-left: 20px;
-    }
-    #value{
-        margin-right: 40px; 
-    }
 }
